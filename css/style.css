@@ -78,9 +78,8 @@ button:hover, .cta-button:hover {
 
 /* === Layout Containers === */
 section {
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: #fff;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 /* Header */
@@ -89,6 +88,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 1rem;
 }
 header .logo {
   height: 50px;
@@ -105,7 +114,6 @@ header nav button {
 }
 /* === Hero Section === */
 #hero {
-  text-align: center;
   margin: 0px;
   padding: 4rem 2rem;
   background: linear-gradient(135deg, var(--color-accent), #fceabb);
@@ -124,9 +132,53 @@ header nav button {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+#hero div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 2rem;
+}
+#hero .hero-text {
+  max-width: 50%;
+}
+#hero div .hero-buttons{
+    display: flex;
+    flex-direction: row;
+}
+#hero .hero-buttons button{
+    margin-right: 1rem;
+}
+#hero .hero-image {
+    max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero img {
+    height: 80vh;
+  width: auto;
+  max-width: 500px;
+  border-radius: 8px;
+}
+/* About Section */
+.about {
+  margin-top: -1rem;
+}
+.about .about-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.about .intro, .about .skills {
+    flex: 1;
+    max-width: 50%;
+}
 
 /* === Services Section === */
-#services {
+.services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -142,6 +194,18 @@ header nav button {
 
 .service-card:hover {
   transform: translateY(-5px);
+}
+ 
+.service-card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-card img {
+
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
 }
 
 .service-card h3 {
