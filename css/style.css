@@ -230,11 +230,54 @@ header nav button {
   margin-bottom: 1.5rem;
 }
 
+#reviews .review-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+#reviews .review-card p::before,
+#reviews .review-card p::after {
+  content: '"';
+}
+
+#reviews .review-card .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#reviews .review-card h4 {
+  font-weight: bold;
+  color: var(--color-dark);
+}
+#reviews .review-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  margin-top: 1rem;
+}
+
 /* === Contact Section === */
 #contact {
   background: var(--color-light);
   border-radius: 8px;
   padding: 2rem;
+}
+
+#contact h3 {
+  text-align: center;
+}
+
+#contact .contact-cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact .contact-cont div {
+  flex: 1;
+  max-width: 45%;
 }
 
 #contact form {
@@ -256,10 +299,44 @@ header nav button {
   font-family: inherit;
 }
 
+#contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
 #contact button {
   margin-top: 1.5rem;
 }
+#contact img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
 
+#contact .socials {
+  margin-top: 1rem;
+}
+#contact .socials a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--color-dark);
+  color: #fff;
+    margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+footer .copyrght {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
 /* === Responsive Typography === */
 @media (max-width: 600px) {
   h1 {
